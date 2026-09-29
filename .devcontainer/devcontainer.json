@@ -1,0 +1,17 @@
+{
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "chat.disableAIFeatures": true,
+                "workbench.secondarySideBar.defaultVisibility": "hidden"
+            },
+            "extensions": [
+                "-github.copilot",
+                "-github.copilot-chat",
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "ms-python.vscode-python-envs"
+            ]
+        }
+    }
+}

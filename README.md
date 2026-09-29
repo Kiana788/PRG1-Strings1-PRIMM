@@ -1,77 +1,48 @@
-# Learning Strings with PRIMM
+# PRG1: Strings (PRIM activities)
 
-Strings are sequences of characters, which makes them a great way to practise
-loops, indexing, and building new values from existing ones. This lesson uses
-the **PRIMM methodology**:
+Day 4, session 1. Four activities, each in its own folder, code and tasks together.
+
+Every program in here does a real job: reading a data record, de-duplicating a
+sign-up list, validating a discount code, preparing a mailing list. None of them
+are loops printing numbers at you.
+
+## PRIM
 
 | Step | What you do |
 |---|---|
-| **Predict** | Read the code and write down what you think it will do |
-| **Run** | Execute it and check your prediction |
-| **Investigate** | Try different inputs and dig into *why* it behaves that way |
-| **Modify** | Fix a bug or extend the function as instructed |
-| **Make** | Write your own function from scratch |
+| **Predict** | Say what the code will do **before** you run it. Write it down. |
+| **Run** | Run it. Compare against your prediction. |
+| **Investigate** | Work out *why* it behaves that way. |
+| **Modify** | Change something specific, predicting the effect before each change. |
 
----
+Work in pairs, and swap who drives at each new activity.
 
-## Files in this repo
+## The activities
 
-| File | Purpose |
+| Folder | The job it does |
 |---|---|
-| `snippet_examples.py` | Short warm-up snippets shown on the projector |
-| `exercises.py` | Your main working file — four activities plus extension challenges |
+| `activity-1-reading-a-record/` | Pulls named fields out of one line of data |
+| `activity-2-cleaning-input/` | De-duplicates a sign-up list that humans typed |
+| `activity-3-checking-a-code/` | Decides whether a discount code is valid |
+| `activity-4-broken-strings/` | Prepares a mailing list, badly |
 
----
+Activity 3 is the one to reach. It is the same problem Task 3 asks you to solve
+this afternoon, on different data.
 
-## What each activity covers
+## If you finish
 
-**Activity 1 — Iterating over strings**
-How to step through a string character by character using a `for` loop, and
-how to use `range(len(...))` when you also need the index.
+| Folder | Focus |
+|---|---|
+| `stretch-1-method-chaining/` | Why the order of chained methods changes the answer |
+| `stretch-2-building-a-string/` | Assembling a new string across a loop |
 
-**Activity 2 — Searching strings**
-Looking at characters one by one to count or check things. Introduces the
-pattern of building a counter inside a loop.
+Not expected. Reach these only once the four core activities are genuinely done,
+which means you can explain them rather than just that you ran them.
 
-**Activity 3 — String methods**
-Using built-in methods: `.upper()`, `.lower()`, `.strip()`, `.replace()`,
-and `.split()`. Covers chaining methods together.
+## Running a file
 
-**Activity 4 — Slicing and building**
-Getting parts of a string with `[start:end]` notation, and building new
-strings by accumulating characters.
+```
+python activity-1-reading-a-record/read_record.py
+```
 
-**Extension challenges** *(if you finish early)*
-Palindrome checker, camelCase to snake_case converter, and a text analyser.
-
----
-
-## Getting started
-
-1. Open `exercises.py` and work through the activities in order.
-2. Run the file at any point with:
-   ```bash
-   python exercises.py
-   ```
-3. The bottom of `exercises.py` has a test section — you will see errors or
-   `None` values for any function you have not completed yet. That is normal.
-
----
-
-## Key concepts to leave with
-
-- Strings are sequences — you can loop over them and index into them just
-  like lists
-- `string[i]` gives you one character; `string[start:end]` gives you a slice
-- String methods (`.split()`, `.strip()`, `.replace()`, etc.) do not change
-  the original string — they return a new one
-- The accumulation pattern (building up a result string inside a loop) is
-  used constantly in real Python code
-
----
-
-## Additional resources
-
-- [Python docs — Strings](https://docs.python.org/3/tutorial/introduction.html#strings)
-- [Python docs — String methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
-- [Real Python — Strings and character data](https://realpython.com/python-strings/)
+If `python` is not recognised, use `python3` instead.
