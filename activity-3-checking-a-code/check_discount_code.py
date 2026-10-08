@@ -15,6 +15,8 @@ def is_valid(code):
         return False
     if not code[4:].isdigit():
         return False
+    if code.startswith("SAVE00"):
+        return False
 
     return True
 

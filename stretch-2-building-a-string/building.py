@@ -1,12 +1,14 @@
 def initials_of(full_name):
     initials = ""
     for part in full_name.split(" "):
+        if len(part) in (0, 1):
+            continue
         initials = initials + part[0].upper() + "."
     return initials
 
-
 def redact(text, secret):
-    return text.replace(secret, "*" * len(secret))
+    stars = "*" * (len(secret) - 4) + secret[-4:]
+    return text.replace(secret, stars)
 
 
 print(initials_of("ada byron lovelace"))
